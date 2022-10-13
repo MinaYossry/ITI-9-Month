@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../Styles/reg.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <form id="Login-form">
+        <fieldset>
+            <legend id="log">Log In</legend>
+            <div>
+                <label for="uName">User Name: </label>
+                <input id="uName" name="uName" type="text" placeholder="Enter your username here!"/>
+            </div>
+            <div>
+                <label for="passwrod">Password: </label>
+                <input id="password" name="password" type="password"/>
+            </div>
+            <div>
+                <label>Select your location: </label>
+                <select name="location">
+                    <optgroup label="Africa">
+                        <option>Egypt</option>
+                        <option>Sudan</option>
+                        <option>Namibia</option>
+                    </optgroup>
+                    <optgroup label="Europe">
+                        <option>France</option>
+                        <option>Russia</option>
+                        <option>UK</option>
+                    </optgroup>
+                    <optgroup disabled label="North America">
+                        <option>Canada</option>
+                        <option>Mexico</option>
+                        <option>USA</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <input id="remember" accesskey="m" name="remember" type="checkbox"/>
+                <label for="remember">Remember <u>M</u>e</label>
+            </div>
+            <div>
+                <input type="submit"/>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

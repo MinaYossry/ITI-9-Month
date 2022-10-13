@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1665663145 source:d:\iti\day 3\c\task3-char-to-asci\main.c
+	<stdio.h>
+	<stdlib.h>
+

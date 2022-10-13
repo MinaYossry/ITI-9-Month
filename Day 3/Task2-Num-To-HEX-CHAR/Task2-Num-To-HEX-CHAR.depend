@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1665663390 source:d:\iti\day 3\c\task2-num-to-hex-char\main.c
+	<stdio.h>
+	<stdlib.h>
+

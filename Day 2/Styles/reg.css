@@ -1,0 +1,48 @@
+body {
+    background-color: pink;
+}
+
+table {
+    border: outset 10px rgb(218, 122, 138);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+td {
+    border: solid 1.5px rgb(137, 57, 57);
+    width: 50%;
+    padding: 2px;
+}
+
+.center {
+    text-align: center;
+}
+
+#gender {
+    font-weight: bold;
+    font-size: large;
+}
+
+#interest {
+    font-weight: bolder;
+    font-size: x-large;
+    text-decoration: underline;
+}
+
+#log {
+    color: red;
+    font-size: larger;
+    font-family: cursive;
+}
+
+#Login-form {
+    width: 70%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div {
+    margin: 5px;
+}

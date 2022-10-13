@@ -1,0 +1,54 @@
+body {
+    background-color: pink;
+}
+
+#welcome {
+    color: rgb(234, 85, 110);
+    text-align: right;
+    font-size: medium;
+    font-family: cursive, 'Times New Roman', Times, serif;
+}
+
+div {
+    margin: 25px;
+}
+
+.center {
+    text-align: center;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.red {
+    color: red;
+}
+
+.small-size {
+    font-size: small;
+}
+
+.font {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    display: block;
+}
+
+#next {
+    text-align: right;
+}
+
+#footer {
+    font-size: x-small;
+}
