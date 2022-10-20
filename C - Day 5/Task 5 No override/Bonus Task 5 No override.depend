@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1666271097 source:d:\iti\day 6\c\bonus task 5 no override\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+

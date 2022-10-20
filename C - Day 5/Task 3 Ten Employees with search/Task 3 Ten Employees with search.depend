@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1666269944 source:d:\iti\day 6\c\task 3 ten employees with search\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+

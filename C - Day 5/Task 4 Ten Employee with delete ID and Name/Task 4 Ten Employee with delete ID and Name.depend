@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1666269824 source:d:\iti\day 6\c\task 4 ten employee with delete id and name\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+

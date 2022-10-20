@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1666266465 source:d:\iti\day 6\c\tas1 employee menu\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<windows.h>
+
