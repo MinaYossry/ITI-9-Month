@@ -290,7 +290,7 @@ void deleteByName()
     printf("\n=======================================\n");
     for (int e = 0; e < employeeCount; e++)
     {
-        if(strcmp(name, emp[e].name) == 0)
+        if(emp[e].id != -1 && strcmp(name, emp[e].name) == 0)
         {
             printf("Employee: %s with ID: %i Deleted\n", emp[e].name, emp[e].id);
             emp[e].id = -1;
