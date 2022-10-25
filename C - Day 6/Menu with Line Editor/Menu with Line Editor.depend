@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1666619719 source:d:\iti\day 8\c\menu with line editor\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+
+1666689832 source:d:\iti\day 8\c\c - day 6\menu with line editor\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+
