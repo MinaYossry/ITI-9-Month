@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1667213974 source:d:\iti\oop - day 4\intarray class\main.cpp
+	<iostream>
+
+1667309748 source:d:\iti\oop - day 5\intarray class\main.cpp
+	<iostream>
+	<string>
+
