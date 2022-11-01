@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1667221106 source:d:\iti\oop - day 4\complex class\main.cpp
+	<iostream>
+	<sstream>
+	<string>
+	<string.h>
+
