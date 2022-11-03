@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1667308116 source:d:\iti\oop - day 5\drawing\main.cpp
+	<iostream>
+	<graphics.h>
+	<windows.h>
+	<conio.h>
+
+1667392509 source:d:\iti\oop - day 6\drawing\main.cpp
+	<iostream>
+	<graphics.h>
+	<windows.h>
+	<conio.h>
+
+1667474841 source:d:\iti\oop\oop - day 7\drawing\main.cpp
+	<iostream>
+	<graphics.h>
+	<windows.h>
+	<conio.h>
+
