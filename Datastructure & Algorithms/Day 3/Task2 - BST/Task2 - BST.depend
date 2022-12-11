@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1669210200 source:d:\iti\ds\day 3\task2 - bst\main.cpp
+	<iostream>
+	<windows.h>
+	<conio.h>
+	<vector>
+

@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1669117292 source:d:\iti\ds\day 1\task2 (class structure)\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<string>
+	<windows.h>
+

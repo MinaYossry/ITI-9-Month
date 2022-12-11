@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1669043412 source:d:\iti\ds\day 1\task4 - stack\main.cpp
+	<iostream>
+	<windows.h>
+	<conio.h>
+

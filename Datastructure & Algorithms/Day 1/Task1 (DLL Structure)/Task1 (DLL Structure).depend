@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1669031044 source:d:\iti\ds\day 1\task1 (dll structure)\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Untitled Document</title>
+    <style>
+        #div1 {
+            border: solid 5px red;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">
+
+    </div>
+    <input id="data" type="text">
+    <button id="submit">Submit</button>
+
+    <script>
+        document.body.onkeydown = function () {
+            alert(event.code);
+        }
+
+        document.getElementById("div1").onmousedown = function () {
+            if (event.button == 2)
+                alert("No Context Menu");
+        }
+
+        var myEvent = new Event("timeout");
+        
+        document.getElementById("submit").addEventListener("timeout", function () {
+            alert("You took long time to enter data .. aborted");
+            timeoutBool = true;
+        })
+
+        document.getElementById("submit").onclick = function () {
+            var data = document.getElementById("data");
+            if (data.value == "")
+            {
+                alert("you have 30 seconds to enter the data")
+                setTimeout(() => {
+                    if (data.value == "")
+                    {
+                        document.getElementById("submit").dispatchEvent(myEvent);
+                    }
+                    else
+                    {
+                        alert("submitted");
+                    }
+                }, 2000);
+            }
+            else
+            {
+                alert("submitted");
+            }
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1669115282 source:d:\iti\ds\day 1\task3 queue\main.cpp
+	<iostream>
+	<windows.h>
+	<conio.h>
+
