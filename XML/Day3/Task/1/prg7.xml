@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="demo1.xsl"?>
 <xslTutorial>
@@ -11,3 +12,18 @@
 		<DATA>I need butter.</DATA>
 	</SECTION>
 </xslTutorial>
+=======
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="demo1.xsl"?>
+<xslTutorial>
+	<SECTION>
+		<SUMMARY>I need a pen and some paper</SUMMARY>
+		<DATA>I need a pen.</DATA>
+		<DATA>I need some paper.</DATA>
+	</SECTION>
+	<SECTION>
+		<DATA>I need bread.</DATA>
+		<DATA>I need butter.</DATA>
+	</SECTION>
+</xslTutorial>
+>>>>>>> 779ac28adbf2aae99359e6533901d78e981a8589
