@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.navbar {
+  background-color: rgb(46, 46, 154);
+  flex: 0 1 auto;
+}
+
+.navbar ul {
+  text-align: center;
+  list-style-type: none;
+}
+
+.navbar ul li {
+  padding: 30px;
+  display: inline-block;
+  color: white;
+  font-weight: bolder;
+  font-size: x-large;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.navbar ul li:hover {
+  background-color: cornflowerblue;
+}
+
+.container {
+  flex: 1 1 auto;
+  background: gray;
+}
+
+.output {
+  background: orange;
+  padding: 20px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -50px;
+  box-shadow: 10px 10px;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.slider {
+  display: flex;
+}
+
+.slider #left,
+.slider #right {
+  width: 20px;
+  height: 20px;
+}
+
+.slider #left {
+  position: absolute;
+  top: 45%;
+  left: 0%;
+}
+
+.slider #right {
+  position: absolute;
+  top: 45%;
+  left: 90%;
+}
+
+img {
+  margin: 5px;
+  max-width: 250px;
+}
+
+.slider {
+  vertical-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -50px;
+}
+
+.show {
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.form {
+  text-align: center;
+  height: 200px;
+}
+
+button {
+  width: 50px;
+  height: 25px;
+}
+
+.complain {
+  height: 200px;
+  text-align: center;
+}
+
+.complain button {
+  width: 100px;
+}
+
+.dropdown {
+  position: absolute;
+  left: 50%;
+}
+
+.dropdown ul {
+  text-align: center;
+  list-style-type: none;
+  background-color: rgb(112, 112, 189);
+}
+
+.dropdown ul li {
+  padding: 30px;
+  color: white;
+  font-weight: bolder;
+  font-size: x-large;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.dropdown ul li:hover {
+  background-color: rgb(36, 76, 150);
+}

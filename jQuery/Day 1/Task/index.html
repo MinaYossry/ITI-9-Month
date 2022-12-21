@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li id="about">About</li>
+        <li id="gallary">Gallary</li>
+        <li id="services">Services</li>
+        <li id="complain">Complain</li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="output show">
+        <p>Story About snow man</p>
+      </div>
+      <div class="slider gallary">
+        <img id="left" src="imgs/left.png" />
+        <img id="1" class="currentImg" src="imgs/1.jpg" />
+        <img id="right" src="imgs/right.png" />
+      </div>
+      <div class="output form">
+        <div>
+          <label>Name:</label>
+          <input id="name" type="text" />
+        </div>
+        <div>
+          <label>Email:</label>
+          <input id="email" type="text" />
+        </div>
+        <div>
+          <label>Phone:</label>
+          <input id="phone" type="text" />
+        </div>
+        <div>
+          <label>Complain:</label>
+          <div>
+            <textarea id="cp"></textarea>
+          </div>
+        </div>
+        <div>
+          <button id="submit">Submit</button>
+        </div>
+      </div>
+      <div class="output complain">
+        <p>Your complain is <span id="cpText"></span></p>
+        <p>Your name is <span id="nameText"></span></p>
+        <p>Your email is <span id="emailText"></span></p>
+        <p>Your phone is <span id="phoneText"></span></p>
+        <div><button id="back">Back to Edit</button></div>
+      </div>
+
+      <div class="dropdown">
+        <ul>
+          <li>Option 1</li>
+          <li>Option 2</li>
+          <li>Option 3</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
