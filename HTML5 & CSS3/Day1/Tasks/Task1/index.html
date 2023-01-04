@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      div {
+        padding: 50px;
+        text-align: center;
+      }
+      video {
+        width: 50%;
+      }
+      #rangeSlider {
+        width: 50%;
+      }
+      div * {
+        margin: 10px 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <video id="video" src="frozen.mp4" poster="frozen.jpg"></video>
+      <br />
+      <span id="currentTime">00:00</span>/<span id="totalTime">00:00</span>
+      <br />
+      <input
+        id="rangeSlider"
+        type="range"
+        value="0"
+        min="0"
+        max=" 100"
+        step="1"
+      />
+      <br />
+      <button id="play">Play</button>
+      <button id="stop">Stop</button>
+      <button id="fastBack">&lt;&lt;</button>
+      <button id="back">&lt;</button>
+      <button id="forward">&gt;</button>
+      <button id="fastForward">&gt;&gt;</button>
+      <input id="volume" type="range" min="0" max="100" value="50" />
+      <button id="mute">Mute</button>
+      <br />
+      <span>Speed: </span>
+      <input id="speed" type="range" min="25" max="200" value="100" />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
