@@ -1,0 +1,22 @@
+p {
+  color: grey;
+  margin-top: 3px;
+}
+
+input {
+  display: block;
+  margin: 25px 0;
+}
+
+input:required {
+  padding: 5px;
+  outline: 2px red solid;
+}
+
+input:valid {
+  outline: 2px blue solid;
+}
+
+input:valid + p {
+  display: none;
+}
