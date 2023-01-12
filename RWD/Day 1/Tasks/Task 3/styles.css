@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+body {
+  height: 100vh;
+  color: white;
+  font-size: x-large;
+  text-align: center;
+}
+
+header,
+footer {
+  background-color: rgb(38, 111, 247);
+  padding: 10px;
+}
+
+.content {
+  height: 100%;
+  margin: 5px 0;
+}
+
+.nav,
+.bar {
+  background-color: orange;
+  flex-grow: 1;
+  margin: 5px 0;
+  padding-top: 50px;
+}
+
+.main {
+  background-color: lightgreen;
+  flex-grow: 2;
+  margin: 5px;
+  padding-top: 50px;
+}
