@@ -1,0 +1,60 @@
+C# is pure OOP language
+
+CTS
+    - Value Type
+        - Struct -> all primitive datatype except [String, 'another one'] -> can't be inherited
+
+        - Enum
+    - Reference Type
+        - Class -> All classes inherit from base class [System.Object]
+
+------------------------- Value Types
+System.Int32 y = Int32 --> BCL Struct
+int y --> C# syntax
+
+-System.Int32 y = Int32 y = int y;
+-- visual studio will produce a warning for System.Int32
+
+
+------------------------- Reference Type
+System.Object -> Base Class for all Classes, Structs, Enums
+
+--- 4 Object Behaviors Supported [built-in System.Object]
+    1- public virutal string ToString(){}
+        - return string representation for Object State (attributs)
+        - Default implementation return DataType Name
+    
+    2- public virtual bool Equals(Object O1);
+
+    3- public virutal int GetHashCode();
+        - return Object indentity: integer represent the object unique for each Object
+
+    4- public Type GetType();
+
+Object O1;
+    -- Zero Bytes allocated
+    -- O1 : Alias
+
+O1 = new Object();
+    -- Allocation Object Size in Heap
+
+what is "new" doing?
+    1- Allocate # of Bytes in Head (Object Size + Overhead Variables)
+        - Object Size = attributs
+        - Overhead Variables = CLR Variables to manage the memory (garbage collector) 16 bytes
+
+    2- Initilaizting Allocated Bytes
+    3- Call Ctor if Exists
+    4- Assign Reference
+
+
+.Clone()
+    return System.Object object
+    must be exiplicilty casted to the correct class type
+
+To access array from last element
+    - ^0 = length
+    - ^1 = length - 1 = last element
+    - ^0 out of range exception
+
+-
