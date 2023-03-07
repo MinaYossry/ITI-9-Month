@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    @{
+        Chart chart = new Chart(width: 500, height: 300, theme: ChartTheme.Blue)
+                            .AddTitle("Chart for languages")
+                            .AddSeries(chartType: "column",
+                                        xValue: new[] { "ASP.NET", "HTML5", "C Language", "C++" },
+                                        yValues: new[] { "90", "100", "80", "70" })
+                            .Write("bmp"); ;
+    }
+</body>
+</html>

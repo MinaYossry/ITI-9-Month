@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome Page</title>
+    <style>
+        #P_Name {
+            color: red;
+        }
+
+        #P_Birthdate {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="post">
+        <div>
+            <label for="Name">Name: </label>
+            <input required type="text" name="Name" id="Name" value="" placeholder="Enter Your Name" />
+        </div>
+
+        <div>
+            <label for="Birthdate">Birthdate: </label>
+            <input required type="date" name="Birthdate" id="Birthdate" />
+        </div>
+
+        <div>
+            <input type="checkbox" name="IsGraduated" id="IsGraduated" />
+            <label for="IsGraduated">IsGraduated</label>
+        </div>
+
+        <input type="submit" value="Go" />
+    </form>
+
+    @if (IsPost)
+    {
+        <div>
+            <p id="P_Name">Hello @Request.Form["Name"]</p>
+            <p id="P_Birthdate">Your Birthdate is @Request.Form["Birthdate"]</p>
+            @if (Request.Form["IsGraduated"] == "on")
+            {
+                <p>Graduated!</p>
+            }
+            else
+            {
+                <p>Not Graduated!</p>
+            }
+        </div>
+    }
+
+</body>
+</html>

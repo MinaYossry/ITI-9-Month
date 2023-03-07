@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Birthday Card</title>
+    <style>
+        *
+        {
+            margin:0;
+            padding:0;
+        }
+        p
+        {
+            font-weight: bold;
+        }
+
+        
+
+        .container
+        {
+            display: flex;
+            flex-direction: row;
+            width: 150%;
+        }
+
+        form {
+            width: 50%;
+            border: 2px solid black;
+            margin: 10px;
+        }
+
+        form > *
+        {
+            margin-bottom: 10px;
+        }
+
+        #card {
+            width: 50%;
+            border: 2px solid black;
+            margin: 10px;
+
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        img
+        {
+            width:50%;
+        }
+
+        #card > p {
+            font-size: x-large;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <form method="post">
+        <p>Choose a background image:</p>
+        <select name="ImageNumber">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+        </select>
+
+        <p>Choose a font color:</p>
+        <select name="FontColor">
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+            <option value="hotping">HotPink</option>
+            <option value="gray">Gray</option>
+            <option value="purple">Purple</option>
+            <option value="teal">Teal</option>
+        </select>
+
+        <hr />
+
+        <p>Choose a greeting Type: </p>
+        <div>
+            <input type="radio" name="GreetingType" value="bd.jpg" />
+            <label>Birthday</label>
+        </div>
+
+        <div>
+            <input type="radio" name="GreetingType" value="well.gif" />
+            <label>Get Well Soon</label>
+        </div>
+
+        <div>
+            <input type="radio" name="GreetingType" value="val.bmp" />
+            <label>Valentine</label>
+        </div>
+
+        <div>
+            <input type="radio" name="GreetingType" value="congrats.gif" />
+            <label>Congrats</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="AddPic" />
+            <label>Add the Picture</label>
+        </div>
+
+        <div>
+            <label>Enter the greeting Message: </label>
+        </div>
+
+        <textarea name="GreetingMessage"></textarea>
+        <hr />
+        <input type="submit" value="Preview"/>
+    </form>
+
+
+        @{ 
+            if (IsPost)
+            {
+                var BackGroundImage = $"/backgrounds/{Request.Form["ImageNumber"]}.jpg";
+                var FontColor = Request.Form["FontColor"];
+                var GreetingImage = $"/images/{Request.Form["GreetingType"]}";
+                var AddPicture = Request.Form["AddPic"] == "on";
+                var GreetingMessage = Request.Form["GreetingMessage"];
+
+                <div style="background-image: url(@BackGroundImage); color: @FontColor" id="card">
+                    @if(AddPicture)
+                    {
+                        <img src="@GreetingImage" />
+                    }
+                    <p>@GreetingMessage</p>
+                </div>
+            }
+        }
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿@using CarTask.Models
+
+
+<p><a href="/Car/Create/"> Create New Car </a></p>
+
+@{
+    ViewBag.Title = "GetAllCars";
+
+    List<Car> CarList = ViewBag.CarsList;
+}
+
+<h2>GetAllCars</h2>
+
+<table>
+    <tr>
+        <th>Num</th>
+        <th>Color</th>
+        <th>Model</th>
+        <th>Manufacture</th>
+    </tr>
+
+    @foreach (var Car in CarList)
+    {
+        <tr>
+            <td>@Car.Num</td>
+            <td>@Car.Color</td>
+            <td>@Car.Model</td>
+            <td>@Car.Manufacture</td>
+            <td></td>
+            <td> <a href="/Car/SelectCarById/@Car.Num"> Select Car </a> </td>
+            <td> <a href="/Car/Edit/@Car.Num"> Edit Car </a> </td>
+            <td> <a href="/Car/Delete/@Car.Num"> Delete Car </a> </td>
+        </tr>
+    }
+</table>
+

@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "ShowDetails";
+    string image = $"../../images/{ViewBag.Image}.jpg";
+}
+
+<h2>ShowDetails</h2>
+
+<p>Your ID is: @ViewBag.Id</p>
+<p>Your Name is: @ViewBag.Name</p>
+<div>
+    <img width="450" src="@image" />
+</div>
+

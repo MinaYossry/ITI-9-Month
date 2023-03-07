@@ -1,0 +1,40 @@
+﻿@using WebGrid_Helper;
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+
+    @{
+        var customers = new List<Customer>
+        {
+            new Customer { Name="Rohit",Address="Delhi", M_salary=40000},
+            new Customer{ Name="Rahul", Address="Kanpu", M_salary=35000},
+            new Customer { Name="Rehan", Address="Luckmow", M_salary=55000},
+            new Customer { Name="Namrata", Address="Agra", M_salary=35000},
+            new Customer { Name="Shivani", Address="Chennai", M_salary=67000},
+            new Customer { Name="Rohit",Address="Noida", M_salary=78000},
+            new Customer{ Name="Smith", Address="Gaziabad",M_salary=67000},
+            new Customer { Name="Manya", Address="Merath",M_salary=100000},
+            new Customer { Name="Shalini", Address="Mumbai",M_salary=130000},
+            new Customer { Name="Priyam", Address="Gujrat", M_salary=90000}
+        };
+
+        WebGrid grid = new WebGrid(customers);
+
+
+
+        
+
+
+    }
+
+        @grid.GetHtml();
+
+
+
+
+</body>
+</html>
