@@ -1,0 +1,12 @@
+﻿@model HandleErrorInfo
+@{
+    ViewBag.Title = "ErrorPage";
+}
+
+<h2>Error from Finance</h2>
+
+<h3 style="color:blue">  Error from Finance  </h3>
+
+<h3> Error message : @Model.Exception.Message  </h3>
+
+<h4> Action: @Model.ActionName   </h4>

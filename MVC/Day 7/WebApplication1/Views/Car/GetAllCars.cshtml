@@ -1,0 +1,36 @@
+﻿@using WebApplication1.Models
+
+
+<p><a href="/Car/Create/"> Create New Car </a></p>
+
+@{
+    ViewBag.Title = "GetAllCars";
+
+    List<Car> CarList = ViewBag.CarsList;
+}
+
+<h2>GetAllCars</h2>
+
+<table>
+    <tr>
+        <th>Num</th>
+        <th>Color</th>
+        <th>Model</th>
+        <th>Manufacture</th>
+    </tr>
+
+    @foreach (var Car in CarList)
+    {
+        <tr>
+            <td>@Car.Id</td>
+            <td>@Car.Color</td>
+            <td>@Car.Model</td>
+            <td>@Car.Manufacture</td>
+            <td></td>
+            <td> <a href="/Car/SelectCarById/@Car.Id"> Select Car </a> </td>
+            <td> <a href="/Car/Edit/@Car.Id"> Edit Car </a> </td>
+            <td> <a href="/Car/Delete/@Car.Id"> Delete Car </a> </td>
+        </tr>
+    }
+</table>
+
