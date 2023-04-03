@@ -1,0 +1,15 @@
+<div>
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Username"
+    aria-label="Username"
+    aria-describedby="basic-addon1"
+    id="Username"
+    [(ngModel)]="Username"
+  />
+</div>
+<p class="mt-2">{{ Username }}</p>
+<div>
+    <button class="btn btn-primary" (click)="Reset()">Reset</button>
+</div>
