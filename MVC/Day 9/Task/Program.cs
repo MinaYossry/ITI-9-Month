@@ -27,8 +27,8 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddAuthentication().AddFacebook(options =>
 {
-    options.AppId = "917404229298470";
-    options.AppSecret = "3293795f8ec36b7800ec671f42f7ba6f";
+    options.AppId = "";
+    options.AppSecret = "";
     options.AccessDeniedPath = "/AccessDeniedPathInfo";
 });
 
