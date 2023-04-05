@@ -1,0 +1,63 @@
+<div class="container">
+  <form (ngSubmit)="SubmitForm()" [formGroup]="formValidation">
+    <div class="mb-3 row">
+      <label for="inputName" class="col-4 col-form-label">Name</label>
+      <div class="col-8">
+        <input
+          formControlName="Name"
+          required
+          type="text"
+          class="form-control"
+          name="inputName"
+          id="inputName"
+          placeholder="Name"
+        />
+        <div class="mt-2" *ngIf="!IsValidName">
+          <p class="alert alert-danger">Name is not valid</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3 row">
+      <label for="inputAge" class="col-4 col-form-label">Age</label>
+      <div class="col-8">
+        <input
+          formControlName="Age"
+          required
+          type="number"
+          class="form-control"
+          name="inputAge"
+          id="inputAge"
+          placeholder="Age"
+        />
+        <div class="mt-2" *ngIf="!IsValidAge">
+          <p class="alert alert-danger">Age is not valid</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3 row">
+      <label for="inputEmail" class="col-4 col-form-label">Email</label>
+      <div class="col-8">
+        <input
+          formControlName="Email"
+          required
+          type="email"
+          class="form-control"
+          name="inputEmail"
+          id="inputEmail"
+          placeholder="Email"
+        />
+        <div class="mt-2" *ngIf="!IsvalidEmail">
+          <p class="alert alert-danger">Email is not valid</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3 row">
+      <div class="offset-sm-4 col-sm-8">
+        <input type="submit" class="btn btn-primary" value="Submit" />
+      </div>
+    </div>
+  </form>
+</div>

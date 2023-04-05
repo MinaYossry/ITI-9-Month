@@ -1,0 +1,59 @@
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" routerLinkActive="" routerLink="/">Day 4 Task</a>
+    <button
+      class="navbar-toggler d-lg-none"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav me-auto mt-2 mt-lg-0 list-group">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLinkActiveOptions]="{ exact: true }"
+            routerLinkActive="list-group-item list-group-item-action list-group-item-primary"
+            routerLink="/"
+            aria-current="page"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            [routerLinkActiveOptions]="{ exact: true }"
+            routerLinkActive="list-group-item list-group-item-primary list-group-item-action "
+            class="nav-link"
+            routerLink="/students"
+            href="#"
+            >Students</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            routerLinkActive="list-group-item list-group-item-primary list-group-item-action "
+            class="nav-link"
+            routerLink="/details/5"
+            href="#"
+            >Details</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            [routerLinkActiveOptions]="{ exact: true }"
+            routerLinkActive="list-group-item list-group-item-action list-group-item-primary"
+            class="nav-link"
+            routerLink="/error"
+            href="#"
+            >Error</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
