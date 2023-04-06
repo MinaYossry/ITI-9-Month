@@ -1,0 +1,27 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Mina Yossry",
+      "age": 26,
+      "email": "mina.yossry4@gmail.com",
+      "phone": "01289594184",
+      "courses": [
+        "C1",
+        "C3",
+        "C4"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Ahmed",
+      "age": 35,
+      "email": "Ahmed@gmail.com",
+      "phone": "010101010",
+      "courses": [
+        "C2",
+        "C4"
+      ]
+    }
+  ]
+}

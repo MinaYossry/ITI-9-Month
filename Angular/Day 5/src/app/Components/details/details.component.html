@@ -1,0 +1,29 @@
+<div *ngIf="SelectedStudent; else FalseBlock" class="card">
+  <div class="card-body">
+    <h5 class="card-title">{{ SelectedStudent.name }}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">
+      Age: {{ SelectedStudent.age }}
+    </h6>
+    <p class="card-text">Email: {{ SelectedStudent.email }}</p>
+    <p class="card-text">Phone: {{ SelectedStudent.phone }}</p>
+    <p class="card-text">Courses:</p>
+    <ul>
+      <li *ngFor="let course of SelectedStudent.courses">{{ course }}</li>
+    </ul>
+    <a routerLink="/" class="me-2 btn btn-primary">Back To List</a>
+    <a
+      routerLink="/students/edit/{{ SelectedStudent.id }}"
+      class="me-2 btn btn-warning"
+      >Edit</a
+    >
+    <a
+      routerLink="/students/delete/{{ SelectedStudent.id }}"
+      class="me-2 btn btn-danger"
+      >Delete</a
+    >
+  </div>
+</div>
+
+<ng-template #FalseBlock>
+  <p class="alert alert-danger">Student Not Found</p>
+</ng-template>

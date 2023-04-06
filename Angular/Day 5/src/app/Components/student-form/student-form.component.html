@@ -1,0 +1,65 @@
+<form (ngSubmit)="onSubmit()">
+  <input
+    type="number"
+    hidden
+    id="idInput"
+    name="id"
+    [(ngModel)]="SelectedStudent.id"
+  />
+  <div class="mb-3">
+    <label for="nameInput" class="form-label">Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="nameInput"
+      name="name"
+      [(ngModel)]="SelectedStudent.name"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="ageInput" class="form-label">Age</label>
+    <input
+      type="number"
+      class="form-control"
+      id="ageInput"
+      name="age"
+      [(ngModel)]="SelectedStudent.age"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="emailInput" class="form-label">Email</label>
+    <input
+      type="email"
+      class="form-control"
+      id="emailInput"
+      name="email"
+      [(ngModel)]="SelectedStudent.email"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="phoneInput" class="form-label">Phone</label>
+    <input
+      type="tel"
+      class="form-control"
+      id="phoneInput"
+      name="phone"
+      [(ngModel)]="SelectedStudent.phone"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="coursesInput" class="form-label">Courses</label>
+    <select
+      class="form-select"
+      multiple
+      id="coursesInput"
+      name="courses[]"
+      [(ngModel)]="SelectedStudent.courses"
+    >
+      <option value="C1">C1</option>
+      <option value="C2">C2</option>
+      <option value="C3">C3</option>
+      <option value="C4">C4</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
